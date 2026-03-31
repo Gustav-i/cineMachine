@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+
 :root {
   --color-primary: #df1111;
   --color-primary-strong: #b50f0f;
@@ -216,7 +218,7 @@ body::after {
 }
 
 .logo img {
-  height: 7rem;
+  height: 6rem;
   width: auto;
   margin-right: 3px;
   border-radius: 50%;
@@ -236,25 +238,24 @@ body::after {
 }
 
 .logo h1 {
-  font-family: "Space Grotesk", "Sora", sans-serif;
+  font-family: "Modern Antiqua", serif;
   letter-spacing: 0.04em;
   font-size: 2.3rem;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
 }
 
 .brand-title {
   text-shadow: 0 0 0 rgba(255, 211, 147, 0.25);
-  /* animation: title-glow 4.5s ease-in-out infinite; */
 }
 
 .search {
   justify-self: stretch;
-  /* border: 1px solid rgba(255, 255, 255, 0.08); */
   border: none;
   padding: 1.1rem 1.5rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   border-radius: 1rem;
   width: 100%;
   transition: 0.25s ease;
@@ -422,7 +423,8 @@ body::after {
   align-items: center;
   justify-content: center;
   padding: 0;
-  border-radius: 50%;
+  border-radius: 6px;
+  padding: 6px;
   border: none;
   background-color: var(--color-primary);
   color: var(--color-text);
@@ -432,30 +434,21 @@ body::after {
   transition: background-color 0.2s ease;
 }
 
-.btn-delete:hover {
-  background-color: var(--color-red-dark);
+.btn-delete:hover, .btn-toggle:hover, .btn-add:hover {
+  filter: brightness(110%);
 }
 
-.btn-delete,
-.btn-toggle,
-.btn-add {
+.btn-delete:active, .btn-toggle:active, .btn-add:active {
+  transform: scale(0.95) translateY(2px);
+}
+
+.btn-delete, .btn-toggle, .btn-add {
   transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.btn-delete:hover,
-.btn-toggle:hover,
-.btn-add:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 0.6rem 1.6rem rgba(0, 0, 0, 0.3);
-}
-
-.btn-delete:hover {
-  background-color: #ff4d4d;
-}
-
-.btn-delete:hover .trash-icon {
+/* .btn-delete:hover .trash-icon {
   animation: trash-wiggle 0.22s ease-in-out;
-}
+} */
 
 .summary {
   padding: 2.2rem 2rem 1.8rem;

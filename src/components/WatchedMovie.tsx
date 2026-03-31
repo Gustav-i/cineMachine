@@ -31,9 +31,10 @@ export function WatchedMovie({ movie, onDeleteWatched }: WatchedMovieProps)
           aria-label={`Remove ${movie.title} from watched list`}
           onClick={() => onDeleteWatched(movie.imdbID)}
         >
-          <svg className="trash-icon" viewBox="0 0 24 24" aria-hidden="true">
+          {/* <svg className="trash-icon" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M9 3h6l1 2h4v2H4V5h4l1-2Zm1 7h2v8h-2v-8Zm4 0h2v8h-2v-8ZM8 10h2v8H8v-8Z" />
-          </svg>
+          </svg> */}
+          Delete
         </button>
       </div>
     </li>
