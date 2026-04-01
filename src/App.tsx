@@ -13,10 +13,6 @@ import { WatchedSummary } from "./components/WatchedSummary"
 import { WatchedMoviesList } from "./components/WatchedMoviesList"
 import type { OMDbSearchMovie, OMDbSearchResponse, WatchedMovie } from "./types"
 
-
-export const average = (arr: number[]): number =>
-  arr.length === 0 ? 0 : arr.reduce((acc, cur) => acc + cur, 0) / arr.length
-
 // const apiKey = process.env.REACT_APP_API_KEY
 
 // console.log(apiKey); // abc123supersecreta

@@ -1,4 +1,4 @@
-import { average } from "../App"
+import { average } from "../utils"
 import type { WatchedMovie } from "../types"
 
 interface WatchedSummaryProps {
